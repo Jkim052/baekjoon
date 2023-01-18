@@ -1,7 +1,7 @@
 a = input()
 
 if int(a) < 10:
-    a = a+'0'
+    a = '0'+ a
 d = a
 c=0
 while True:
