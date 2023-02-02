@@ -1,11 +1,14 @@
-cups = [1, 2, 3]
-
 m = int(input())
+
+cup = 1
 
 for i in range(m):
     a, b = map(int, input().split())
-    a = cups.index(a)
-    b = cups.index(b)
-    cups[a], cups[b] = cups[b], cups[a]
+    if cup in [a,b]:
+        if cup == a:
+            cup = b
+        else:
+            cup = a
+    else: pass
 
-print(cups[0])
+print(cup)
